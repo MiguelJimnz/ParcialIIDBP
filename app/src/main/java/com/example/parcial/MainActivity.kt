@@ -14,13 +14,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.parcial.items.Navigation
 import com.example.parcial.ui.theme.ParcialTheme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Navigation();
-
+            ParcialTheme {
+                Navigation()
+            }
         }
     }
 }
